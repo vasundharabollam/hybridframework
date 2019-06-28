@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [hybridframework]">
+  <listeners>
+    <listener class-name="com.hybridframework.utilities.Reporting_2"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.hybridframework.testcases.TC_LoginTest_002">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="1 2 3"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.hybridframework.testcases.TC_LoginTest_002 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [hybridframework] -->
